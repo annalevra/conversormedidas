@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hera Maria Jóias Afetivas</title>
+        <!--CSS (Sempre antes de fechar a head)-->
+        <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!---->
+                <img src="https://raw.githubusercontent.com/annalevra/conversorMedida/master/imagens/hera.png" alt="Logo da Empresa">
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="conversor.html">Conversor de Medidas</a></li>
+                <!-- Itens do Cabeçalho -->
+            </ul>
+        </nav>
+    </header>
+    <h1>Hera Jóias Afetivas</h1>
+
+        <form id="conversorMedidas">
+            <h2>Conversor de Medidas</h1>
+
+        <label for="metros">Metros:</label>
+        <input type="number" id="metros" placeholder="Digite a quantidade em metros" step="0.01" pattern="[0-9]" required>
+        <label for="unidade">Converter para:</label>
+        <select id="unidade">
+            <option value="" selected disabled>Selecione...</option>
+            <option value="centímetros">Centímetro</option>
+            <option value="quilômetros">Quilômetro</option>
+            <option value="milhas">Milha</option>
+            <option value="pés">Pé</option>
+            <option value="polegadas">Polegada</option>
+            <option value="jardas">Jarda</option>
+        </select>
+        <button onclick="converter(event)">
+        <i class="bi bi-calculator"></i>  Converter</button>
+        <p id="resultado"></p>
+        <script src="conversor.js"></script>
+        </form>
+    <footer>
+        <p>&copy; 2023 - Hera Maria Jóias Afetivas</p>
+    </footer>
+</body>
+</html>
